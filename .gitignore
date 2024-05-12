@@ -19,3 +19,4 @@ vscode-cpptools/
 .profile
 .sudo_as_admin_successful
 .wget-hsts
+!**/Doxyfile
