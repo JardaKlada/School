@@ -1,0 +1,113 @@
+\hypertarget{repa-projekt-alg_8cpp}{}\doxysection{repa-\/projekt-\/alg.cpp File Reference}
+\label{repa-projekt-alg_8cpp}\index{repa-\/projekt-\/alg.cpp@{repa-\/projekt-\/alg.cpp}}
+{\ttfamily \#include $<$stack$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for repa-\/projekt-\/alg.cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{repa-projekt-alg_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structNode}{Node}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{repa-projekt-alg_8cpp_a4d568eadf0c761f01a1eac475f297ada}{find\+\_\+\+Index}} (string str, int start\+Index, int end\+Index)
+\begin{DoxyCompactList}\small\item\em Allocates memory for a new node and initializes it with the given data. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{repa-projekt-alg_8cpp_aa1d3fa9d73e91f0d6cdd3ba134f4707c}{binary\+Tree\+To\+String}} (\mbox{\hyperlink{structNode}{Node}} $\ast$root)
+\begin{DoxyCompactList}\small\item\em Converts the binary tree to a string in bracket representation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structNode}{Node}} $\ast$ \mbox{\hyperlink{repa-projekt-alg_8cpp_a7fce02e6bd29fc3afe3cfc2f8980327f}{tree\+\_\+from\+\_\+string}} (string str, int start\+Index, int end\+Index)
+\begin{DoxyCompactList}\small\item\em Constructs a binary tree from the given string in bracket representation. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{repa-projekt-alg_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Main function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{repa-projekt-alg_8cpp_aa1d3fa9d73e91f0d6cdd3ba134f4707c}\label{repa-projekt-alg_8cpp_aa1d3fa9d73e91f0d6cdd3ba134f4707c}} 
+\index{repa-\/projekt-\/alg.cpp@{repa-\/projekt-\/alg.cpp}!binaryTreeToString@{binaryTreeToString}}
+\index{binaryTreeToString@{binaryTreeToString}!repa-\/projekt-\/alg.cpp@{repa-\/projekt-\/alg.cpp}}
+\doxysubsubsection{\texorpdfstring{binaryTreeToString()}{binaryTreeToString()}}
+{\footnotesize\ttfamily string binary\+Tree\+To\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structNode}{Node}} $\ast$}]{root }\end{DoxyParamCaption})}
+
+
+
+Converts the binary tree to a string in bracket representation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em root} & Pointer to the root of the binary tree. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bracket representation of the binary tree. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{repa-projekt-alg_8cpp_a4d568eadf0c761f01a1eac475f297ada}\label{repa-projekt-alg_8cpp_a4d568eadf0c761f01a1eac475f297ada}} 
+\index{repa-\/projekt-\/alg.cpp@{repa-\/projekt-\/alg.cpp}!find\_Index@{find\_Index}}
+\index{find\_Index@{find\_Index}!repa-\/projekt-\/alg.cpp@{repa-\/projekt-\/alg.cpp}}
+\doxysubsubsection{\texorpdfstring{find\_Index()}{find\_Index()}}
+{\footnotesize\ttfamily int find\+\_\+\+Index (\begin{DoxyParamCaption}\item[{string}]{str,  }\item[{int}]{start\+Index,  }\item[{int}]{end\+Index }\end{DoxyParamCaption})}
+
+
+
+Allocates memory for a new node and initializes it with the given data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The data to be stored in the new node. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the newly created node.
+\end{DoxyReturn}
+Finds the index of the clostart\+Indexng parenthestart\+Indexs corresponding to the opening parenthestart\+Indexs at index start\+Index in the given string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & The string to search in. \\
+\hline
+{\em start\+Index} & The index of the opening parenthestart\+Indexs. \\
+\hline
+{\em end\+Index} & The index of the last character in the substring to search in. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Index of the clostart\+Indexng parenthestart\+Indexs, or -\/1 if not found. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{repa-projekt-alg_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{repa-projekt-alg_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{repa-\/projekt-\/alg.cpp@{repa-\/projekt-\/alg.cpp}!main@{main}}
+\index{main@{main}!repa-\/projekt-\/alg.cpp@{repa-\/projekt-\/alg.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Main function. 
+
+\mbox{\Hypertarget{repa-projekt-alg_8cpp_a7fce02e6bd29fc3afe3cfc2f8980327f}\label{repa-projekt-alg_8cpp_a7fce02e6bd29fc3afe3cfc2f8980327f}} 
+\index{repa-\/projekt-\/alg.cpp@{repa-\/projekt-\/alg.cpp}!tree\_from\_string@{tree\_from\_string}}
+\index{tree\_from\_string@{tree\_from\_string}!repa-\/projekt-\/alg.cpp@{repa-\/projekt-\/alg.cpp}}
+\doxysubsubsection{\texorpdfstring{tree\_from\_string()}{tree\_from\_string()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structNode}{Node}}$\ast$ tree\+\_\+from\+\_\+string (\begin{DoxyParamCaption}\item[{string}]{str,  }\item[{int}]{start\+Index,  }\item[{int}]{end\+Index }\end{DoxyParamCaption})}
+
+
+
+Constructs a binary tree from the given string in bracket representation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & The string in bracket representation. \\
+\hline
+{\em start\+Index} & The starting index of the substring to process. \\
+\hline
+{\em end\+Index} & The ending index of the substring to process. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the root of the constructed binary tree. 
+\end{DoxyReturn}
