@@ -13,6 +13,7 @@
 vscode-cpptools/
 .bash_history
 .vscode-server/
+test/
 .bash_logout
 .bashrc
 .motd_shown
