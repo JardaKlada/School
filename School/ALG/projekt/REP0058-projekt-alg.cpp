@@ -18,12 +18,12 @@ struct Node {
 
 
 /**
- * @brief Finds the index of the clostartIndexng parenthestartIndexs corresponding to the opening parenthestartIndexs at index startIndex in the given string.
+ * @brief Finds the index of the closing parenthesis corresponding to the opening parenthesis at index startIndex in the given string.
  * 
  * @param str The string to search in.
  * @param startIndex The index of the opening parenthestartIndexs.
  * @param endIndex The index of the last character in the substring to search in.
- * @return Index of the clostartIndexng parenthestartIndexs, or -1 if not found.
+ * @return Index of the closing parenthesis, or -1 if not found.
  */
 int find_Index(string str, int startIndex, int endIndex)
 {

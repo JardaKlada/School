@@ -262,7 +262,8 @@ public:
 
     string GetName();
     int GetId();
-    static int GetUzivatelCount();
+    int GetUzivatelCount();
+
     #pragma region Polymorfismus
     virtual Objednavka* MakeOrder(vector<Produkt> p, vector<int> a) = 0;
 };
@@ -279,6 +280,11 @@ Uzivatel::~Uzivatel()
     Uzivatel::uzivatelCount -= 1;
 }
 
+int Uzivatel::GetUzivatelCount()
+{
+    return Uzivatel::uzivatelCount;
+}
+
 string Uzivatel::GetName()
 {
     return this->name;
@@ -289,10 +295,6 @@ int Uzivatel::GetId()
     return this->id;
 }
 
-int Uzivatel::GetUzivatelCount()
-{
-    return Uzivatel::uzivatelCount;
-}
 
 #pragma endregion
 
@@ -300,9 +302,12 @@ int Uzivatel::GetUzivatelCount()
 
 class Zakaznik : public Uzivatel
 {
+private:
+    
 public:
     Zakaznik(string n, int i) : Uzivatel(n, i) {}
     Objednavka* MakeOrder(vector<Produkt> p, vector<int> a) override;
+
 };
 
 Objednavka* Zakaznik::MakeOrder(vector<Produkt> p, vector<int> a)
